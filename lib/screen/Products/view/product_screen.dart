@@ -75,7 +75,8 @@ class ProductScreen extends StatelessWidget {
                               //     ? const Center(child: Text('No Image'))
                               //     : null,
                             ),
-                            Text(provider.productModal.products[index].title,style: TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),)
+                            Text(provider.productModal.products[index].title,style: const TextStyle(color: Colors.black,fontSize: 15,fontWeight: FontWeight.bold),),
+                            Text(provider.productModal.products[index].description,style: const TextStyle(),textAlign: TextAlign.center,)
                           ],
                         );
 
